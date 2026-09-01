@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rife Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="music/Rife.png" type="image/x-icon">
+</head>
+<body>
+
+<div class="app">
+
+    <div class="cover">
+        <div class="cover-art"></div>
+    </div>
+
+    <div class="info">
+        <h2 id="songTitle">Song Title</h2>
+        <p id="songArtist">Artist Name</p>
+    </div>
+
+    <audio id="audioPlayer"></audio>
+
+    <div class="progress-container">
+        <span id="currentTime">00:00</span>
+        <input type="range" id="progressBar" value="0">
+        <span id="duration">00:00</span>
+    </div>
+
+    <div class="controls">
+        <button class="btn" id="heartBtn">❤️</button>
+        <button class="btn" id="prevBtn">⏮️</button>
+        <button class="btn" id="playBtn">▶️</button>
+        <button class="btn" id="nextBtn">⏭️</button>
+        <button class="btn">🔀</button>
+    </div>
+
+    <div class="message" id="messageBox">Si tocaste aquí es porque amas a Ruto</div>
+
+    <div class="lyrics-box" id="lyricsBox"></div>
+    <div class="translation-box" id="translationBox"></div>
+
+</div>
+
+<script src="songs.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
